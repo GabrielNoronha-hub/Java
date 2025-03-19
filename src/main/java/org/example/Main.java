@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Informe os dados do usuário: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nome completo: ");
-        String nomeCompleto = scanner.next();
-        System.out.print("Idade: ");
-        int idade = scanner.nextInt();
+        System.out.print("Nome completo do usuário: ");
+        String nomeCompleto = scanner.nextLine();
         System.out.print("Nome completo da mãe: ");
-        String nomeDaMae = scanner.next();
+        String nomeDaMae = scanner.nextLine();
         System.out.print("Nome completo do pai: ");
-        String nomeDoPai = scanner.next();
+        String nomeDoPai = scanner.nextLine();
+        System.out.print("Idade do usuário: ");
+        int idade = scanner.nextInt();
         System.out.println("------------------------------");
 
         Usuario usuario = new Usuario(nomeCompleto, idade, nomeDaMae, nomeDoPai);
